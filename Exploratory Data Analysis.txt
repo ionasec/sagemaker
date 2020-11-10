@@ -69,9 +69,23 @@ Usecase - industrial automation - predictive maintence
 
 $$$ Kinesis Data Analysis
 - Producers - Kinesis Data Stream or Kinesis Data Firehouse
-- Processing / Consumers - SQL Quaries
+- Processing / Consumers - SQL Quaries (or Apache Flink to process)
 - Storage - S3, Redshift, QuickSight
+
+*reads and process stearming data in real-time
+*reference data from S3 once
+*streams and firehouse real time all the time. 
+*application in output streams - s3
+*1-to-4 destiatinos - S3 or RedShift.  \
+(Streaming Application)
+
+Usecase - take data from data source and engineer data on the fly to get data to S3 bucket ready to be used for SageMarket (it's the pipeline)
+* real-time applicatinon  - errors are written to the error stream. 
+
 
 $$$ Visualizing Large DAta - to get patterns
 - Understand data before doing model - Example -  Uber model
 
+
+
+https://jayendrapatil.com/aws-kinesis-data-streams-vs-kinesis-firehose/
