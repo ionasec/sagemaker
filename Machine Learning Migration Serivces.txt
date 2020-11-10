@@ -1,0 +1,60 @@
+Migrate data from a source - streaming, media, IOT - to S3 AWS repository
+
+1) Amazon Data Pipeline
+
+Copy data using Pipeline activities. Schedular regular moving from on-prem or cloud. Pull data from various sources (e.g.DB,RDS, Redshift to S3) and in various sources
+
+2) AWS Database Migration Service 
+
+Moves data between DB - MySQL to MySQL or Aurora to DB
+
+3) AWS Glue - ETL service - 
+
+Extract from various sources, transform and load into destiation - 
+
+Extract - Determnines data type and schema - using classifiers - crowles
+
+Transform - Data engineering algoirthms in the transform piece - PCA or Feature Selection
+
+Trigger - on demand, schedule or event drivven
+
+4) Amazon Sage Maker
+
+Load data from Github
+
+Use Jupyter Notebooks
+
+5) Amazon Athena
+
+Run SQL quaries on S3 data
+
+it needs a data catalog such as the one by glue (that creates the schema)
+
+SQL transform in athena to get it ready for use
+
+
+### Usecase - move dat to S3
+
+A) Move data from EMR cluster to S3 -> Use Data Pipepline 
+B) Move data from DB to S3 -> Use Glue with DB classifier 
+C) Move data from Redshift to S3 -> Use Data Pipeline or Glue to Crawl and find Schema 
+D) Move data from on prem DB -> DB migration service
+
+
+#Exam Tips
+
+1) Gather Data
+=> Data Pipeline, DMS, Glue, SageMaker, Athena
+2) Handle missing Data
+=> Imputation with mode, median, average, Model based imputation - kNN, Regression, Hot deck imputation?, Remove record, Remove feature, 
+3) Feaure extraction 
+=> PCA, Variance Threshold
+4) Decide feautres important
+5) Encode data
+=> Binarize, Label Encoding, One-hot encoding
+6) numerical feature engineer
+=> Normalization, Standardiazaiton, Binning
+7) text feature engineering
+=> bag of words, n-gram - tf... 
+8) split data 
+=> 80/20 split, kfold 

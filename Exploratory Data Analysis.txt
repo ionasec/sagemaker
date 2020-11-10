@@ -1,0 +1,77 @@
+Create Model Step -> Produce and Visualize Data 
+
+$$$ Kinesis Data Stream
+% Producers - IoT, Social Media, LogFiles, Metrics  -- Emm
+
+% Shards - up to 500 - 1 to N
+- partion keys to records, determines the shard, consumers gets all the stream. DAta Streams are grouping of shards, retain data for 24h to 7 days
+- shards are append-only logs
+- share are ordered sequence of arrival
+- shard can get 1000 data per second or 1MB/ sec
+- add shared need when create a stream / or autoscale
+- Fan-out - 1mb write 2mb read per consumer  / non-fan-out  2mb across consumers
+
+
+% Ingestion:
+1) API Producer Library: puts data into KDM asyncronous  / 
+2) Amazon Kinesis Agent - Java Agent which is pre-bulid - install on web servers, log server, looks a files and DB and send it to your stream
+
+% Processing / Consumers:
+- EC2, Lambda, Kinesis Data Analytics, EMR
+
+% Storage & Analytics:
+- S3, Db, Redshift, 
+
+*Massively scalable and durable real-time data streaming servie. 
+
+Capture GB of data per second from thousands of sources  : IoT , Clickstreams,  Logs, Social Media
+Enables real-time anomaly deteciton, dynamic pricing
+
+% Lab - https://aws.amazon.com/blogs/big-data/test-your-streaming-data-solution-with-the-new-amazon-kinesis-data-generator/
+
+
+$$$ Kinesis Data Firehose
+- Producers - same as Data Stream
+- Processing / Consumers  - Uses Lambda function instead of shard to tranmit produce data
+- Storage - S3, Redshift, Elastich Search or Splank (S3 events to push to DB)
+
+
+* fully managed serivce - to capture, transform , and load in s3, redshift, elastic search splunk
+* batch, compress, transform, encrpyt - converts to apache parque
+* near real-time analytics  - no admin
+* scales to gb per seconds - keep data latency to specify levels
+* transform of the data using lambda function to every input data record - use prebuil lambda blueprints
+- Kinesis Data Delivery Stream -  
+-- Call de Firehouse API / Or agent to run on linux - specify batch size and interval / compress Gzip or snappy
+* automatic encrpytion with KMS , track metric of your stream  - volume of data - time from source to destination - delivery success rate
+
+
+$$$ Kinesis Video Streams (real time)
+- Producers - Webcams, security cam , audio feeds, radars... 
+- Processing / Consumers - EC2
+- Storage - S3
+
+*provisions and scales infrastructure to read streaming media
+*Ingestion using the KVS SDK with encrpytion
+*consumer - real-time or batch ML processing
+*signaling channel - two way communication
+
+Usecase - facial recognition - build-in image classificaiton algo or Rekognition service
+Usecase - object detection
+Usecase - CV or analytics
+Usecase - home surve, red lights 
+Usecase - industrial automation - predictive maintence 
+
+*retention - hours to years
+*encrption - before S3 layer is by default encrpytion at rest / customers can provide keys
+
+
+
+$$$ Kinesis Data Analysis
+- Producers - Kinesis Data Stream or Kinesis Data Firehouse
+- Processing / Consumers - SQL Quaries
+- Storage - S3, Redshift, QuickSight
+
+$$$ Visualizing Large DAta - to get patterns
+- Understand data before doing model - Example -  Uber model
+
