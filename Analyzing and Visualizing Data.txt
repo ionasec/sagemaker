@@ -1,0 +1,37 @@
+Analyzing and Visualizing Data
+
+# identify patterns
+# find corrupt data
+# identify outliers
+# find imbalances
+# find correlation - scatter plot
+
+Charting Data is done with BI tools 
+
+- KPI charting - relative performance - NPS / Relative Market Share / Conversion Rate
+- Relationsips - scatter chart - two variable  , bubble chart - three variable 
+- Comparisons - timeseries of comparision - bar chart, column chart - one/two over time , Line chart, 1or more over time
+- Distributions - column histogram, scatter chart
+- Composistions - pie chart, stacked, three map, stack area chart, stacked 100% are... 
+
+BI Tools to visualize
+- Quicksight  -  cloud powered BI service. Service by AWS. Interactive dashboard with ML insights / anomaly, forceasting, auo
+- TensorFow with TensorBoard
+- Tableau - equal to Quicksight
+
+* bias in the data, KPI , scatter charts, outliers visualization
+
+
+LAB
+https://archive.ics.uci.edu/ml/datasets/wholesale+customers
+https://www.kaggle.com/unitednations/global-food-agriculture-statistics
+
+#Exam Tips
+
+KDS - GB per sonds from k sources - real-time analytics -dashboards - anomalies, dynamic pricing / shard / prod / cons / 
+KDF - fully managed that automatially scales, S3, RedShift, ES, and Slunk - batch, compress, encrypt, near-realtime analytics - delivery stream / transform with lambda with prebuild functions
+KVS - automatically scales infra to read streaming data - stores, encrpy, indexes, real-time or batch.  Facial recog, object detection...
+KDA - KDS of KDF - SQL to put data in S3, Redshift, or BI - reads data contiously and gerates analytis SQL. Streaming Apps continously reads and processes data in real time. 
+Glue - fully managed ETL service - catalog, ETL engine, scheduler - semi-structured to realtional scehema on the fly. Data store, crowler, classifiers, table,
+AV Data - using quicksight  - indentify patterns, corrupt data, outliers, bias - demonstrate relationships - distributino, relationshops, comparision, etec. 
+

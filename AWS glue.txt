@@ -1,0 +1,33 @@
+#AWS Glue - ETL
+
+Define Crawle  - put the crawler on a data source  - and populates a catalog with meta data definition - table definition
+
+Use meta data to transfer the data - 
+
+On-demand or trigger - schedule - event tringger
+
+Script runs on Apache Spark environment - Glue only stores metadata but not the data. 
+
+*categorizing, cleaning, enrchining, and moving data
+
+$$ Glue Catalog - persistent metadata store Apache Hive equipv  / Data Catalog
+$$ Glue ETL engine - auto generates python or scala code
+$$ Flexible scheduler - dependency resolution, job monitoring, and retires
+
+Severless
+
+Convert semi-structured schema to relational-schema no the fly...
+
+Classifier - determines the schema of your data ... 
+Connection - the prpop to connect to data store
+Crawler - progress through classifier to determinee schmea to crate catalog
+Database - collection of data catalog
+Datastore - repo for presistent data - Data source and Data target
+Table - metadata defifiont that represents your data - names of the column, type, partion 
+Transform - change source to target data
+Console - define and orchestrate ETL workflows
+ETL operation - autogenerate based on metadata. e.g. ETL into CSV on S3. 
+Job system - managed infra to orchestate ETL workflow - chained jobs. 
+
+%%LAB
+http://archive.ics.uci.edu/ml/datasets/Adult
