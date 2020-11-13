@@ -1,0 +1,14 @@
+Hyperparameter Tuning - parameters set as input to training
+
+Model hparameter - model performance
+Algo hparameter - learning performance
+
+Auto h-parameter tuning
+
+- objective function - AuC - chose metric for tuning job. 
+- strategies - random search - random within range / bayesian - regression problem
+- ranges - json file to config - categorical or continous (max / min)
+- scaling type - auto - linear - log (several order of mag) - reverse lg scale (continuous between 0 - 1.0) ~ highly sensive
+
+
+if use custom algo you must emit metric to stderr or stdout
