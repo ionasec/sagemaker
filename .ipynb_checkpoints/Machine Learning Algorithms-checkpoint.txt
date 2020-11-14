@@ -1,0 +1,121 @@
+
+Strucuted Data
+    Linear Learner
+    Factorization Metric
+    XGBoost
+    K-Mean
+    PCA
+    RandomCutForest
+
+Image Data
+    Image Classification 
+    Semantic Segmentation
+    \ 
+    
+ Natural Language Data
+    Seq 2 Se
+    Neural Topic Modeling
+    Latent Dirichlet Allocation
+    Blazing Text
+    
+Time Series Data
+    DeepAR
+ 
+
+
+Regression Algos
+Clustering Algo
+Class Alg
+Image Alg
+Text Alg
+Anomaly Alg
+Reinforcement 
+Forecasting
+
+Business Problems
+- Discrete categor
+    - Direct email - mail to contributor or not - binary classification / multi-class classification
+        - linear learner / xgboost - reg: logisticss / binary
+        
+    - Quantitative
+        - quantative - regression
+        - linear learner - regressor - quanative 
+        - xgboss - reg:linear
+        
+    - Discrete recommendation 
+        - factorization machines for recommendation
+        
+    - identfiy groups - group identificaiton problem - kMeans - dimensinoality reduction - what attributes , what dimensions ?
+    - translation - seq - two seq
+    - topics of sets of doc - Latent Dirclet / Neural Topic model 
+    - text classifcaiton - blazin text
+    - annomaly detection - random cut / knn
+ 
+--- TYPE OF PROBLEMS ---  
+
+$$$ regression
+$ Linear Regression - best fit line through the 
+- Logistic Regression - binary conclusion 
+* optimize pricing for productline / default on load (logistc) , predict cancer on image scane, sales forcast, vote predictor (logisics), pricing (linear regresion)
+- high-dim vector + taregt (number)
+- maps a vector to an approx target
+- MSE, cross entropy loss, absolute errors 
+- 
+
+^hyper ams for
+- number of features
+- type of target var
+- loss - auto, squareloss, abs loss
+
+$ xgboost - regression 
+- implementation of gradient boosted trees algo
+- combines predictors 
+- weights can diff importance of feature
+- predict income on census dat
+
+^hyper param
+- num of rounds - training
+- objective - reg logistc, req squared error
+
+
+$ k-NN
+- finds distance between points
+- index based - 
+- determines distance 
+- trains to determine index
+- use PCA to reduce dimensionality. 
+
+^hyper param
+- dimension
+- k number
+- predictor type
+- sample size
+- dim -red target
+
+$ factorization machines
+- extension of linear model - good for sparse datasets
+- click prediction - item recommendation
+- continous object - Root mean square error
+- analyze handwritten digits - regression with fact machines
+
+^hyper param
+- feature dim
+- num factors
+- predictor type - regression 
+
+
+$$$ clustering algoithm - unsupervised
+usecases
+- delivery source locatoin ... best on most active bayer
+- crime cluster 
+- customer segmentation 
+- fraud detection based on fraud patterns
+- cyber profiling criminals
+- clustering IT alerts
+- call center recording analysis
+- find cluster based on attributes of voters
+
+
+* euclidean distance between the points can be the similairty
+* groups of obs are closer together
+

@@ -1,0 +1,105 @@
+image analysis - find  object or labels
+
+- classification or object detection 
+
+usecases - 
+- facial recongiztion
+- missing persons
+- medical image analysis
+- -baggege canning
+- product line analysis
+
+image classicicaitn - supervise multi labeled
+- cnn / res net - scratch or using transfer learning
+- seed the model with artifacts from previou model - incremental training
+- Record IO
+- classify image of person as they
+
+
+classes
+samples
+early stopping
+
+
+object detection - supervised - deep neural netowrk
+- image as 
+- obkect with classes - and confidence 
+- location and scalre - bounding
+- trainig from scatch - or pre-trained - like ImageNet
+- detect object in baggages at airport
+
+classes
+samples
+pretrained model (only for object detection)
+
+
+
+%%%text analysis - both super and non-super
+- text or doc - 
+--- categorize, sequence, or calssifieds
+- used for prepreocssing for many NLP, sentime, named entity
+usecase 
+- sentiment analysis in social media stream
+- categorize document by topic
+- language translation
+- speech to text
+- summarizing longer doc
+- conv user interfaces
+- text generation
+- word pronunciation app
+
+
+blazing text -  word2vec - super set 
+- pre-trained 0 can 
+- easly scale for large text datasets
+- train on billion words in minutes using large GPU / CPU
+- market research using sentiment analysis 
+
+
+
+Latent Dirchlet allocation (LDA) - unsupervised
+- number of topic schared across texts or corpus
+- each observation is a doc and feautres is a count of the word in the doc
+- topics are discovered - 
+- document is a mixture of topics - 
+- usecase- find common topic within call center transcirpts  - find common patterns
+
+
+*number of topics
+*size of the vocabulary
+
+
+Neural Topic Modle (NTM) - unsupervised
+- classified or summarized documents based on topic detected
+- retrive infromation from corpus based onn topic simaliries - or recommend content
+- infers topics from observed word distrubiont 
+- visualized contents of a large set of docs
+- similar to LDA
+- find topics of newsgroup message post 
+
+*voc size
+*numbe of topic
+
+Object2Vec - general purpose neural embedding - words that are semantic similar
+clustering of ojbects tha are semantically similar. 
+
+translationing object (sentences, or other) - find relationship beyond paid
+informatin retreval, products seach, item matching , custome profiling
+
+paired tokens, pared sequen , and paired token to sequence
+- usecase - recommend engine on collab filtering 
+
+seq 2 seq - supervised 
+input a seq of token - out a second seq of token
+- speak to tex, radar, etc.
+- RNN / CCN - encoder- decore arch 
+recordio-protbuff fomrat- vocabular in JSON
+
+*no required hyper params
+
+example usecase - text as input - and audoio as ouput for pronunciantion
+
+
+https://fasttext.cc/
+
+
