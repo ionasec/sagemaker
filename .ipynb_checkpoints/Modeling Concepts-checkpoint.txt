@@ -1,0 +1,47 @@
+Supervised
+- categorical - classification - image classification
+- continuous - regression  - sales prediction
+unsupevised
+- discrte - clustering - knn - add campaigin testing
+- contrinous - dim reduction - PCA - feature extract
+reinforcement
+- categorial target - classifiaction - personalized recommendation - amazon.com
+- reward +/i - control - auto robots
+
+
+discrete / continous ?
+- supervised learning 
+target / no-target
+
+
+recommend enging - classification - reinfore
+control - env interaction - reinfore
+
+
+model - perf or model
+algo - speed and quality of process
+auto model tuning - hyper tuning - best version of model 
+
+
+Steps 
+- get and engin data into dataset
+- randomize
+- split
+- chose best algo
+- load algo container
+- chose compute
+- create instsance of model
+- set hyper paramet
+- fit and deplot
+
+deploy
+- persitent endpoint - https for infernce 
+- batch transform - for entire dataset (uses agent)
+
+evalute 
+- performance and accuracy
+
+- k-fold - holdoutset
+- online -production variants
+
+auto, linear, log hyparameter - >0 log < revers log 0-1. 

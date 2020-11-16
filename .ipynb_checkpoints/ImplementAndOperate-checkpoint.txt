@@ -1,0 +1,37 @@
+Performance
+- automatical model tuning - auto model tuning with h param 
+- hosting to scale model to need performance
+
+Availability 
+- use two or more endpoints to make models highly availble AZ
+
+Scalabiliy
+- scale instance through auto scale
+- change #of instance and type of instance without outage
+- scale to large number of transaction
+
+Resiliency and Fault Tolerance
+- spread instaces across AZ at AZ level
+- 
+
+Security 
+- model arfitacts are encrypted in transit and at rest
+- request to API are made through SSL
+- IAM roles to access endpoint
+- encrpted S3 buckets for model artifacts and data
+- KMS key to endpointts to encrypt the attach ML storage volume
+
+Appropiate ML Services
+- Lex - chatbots
+- Rek - DL for video and text
+- Transcribe
+- Translate
+- Polly
+- ?
+
+
+Deploy / Operations
+- HTTPS request - multiple varians pro endpoint
+- Production varian for autoscaling
+- Modify without down time
+

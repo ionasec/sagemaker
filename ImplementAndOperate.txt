@@ -1,0 +1,51 @@
+Performance
+- automatical model tuning - auto model tuning with h param 
+- hosting to scale model to need performance
+
+Availability 
+- use two or more endpoints to make models highly availble AZ
+
+Scalabiliy
+- scale instance through auto scale
+- change #of instance and type of instance without outage
+- scale to large number of transaction
+
+Resiliency and Fault Tolerance
+- spread instaces across AZ at AZ level
+- 
+
+Security 
+- model arfitacts are encrypted in transit and at rest
+- request to API are made through SSL
+- IAM roles to access endpoint
+- encrpted S3 buckets for model artifacts and data
+- KMS key to endpointts to encrypt the attach ML storage volume
+
+Appropiate ML Services
+- Lex - chatbots
+- Rek - DL for video and text
+- Transcribe
+- Translate
+- Polly
+- ?
+
+
+Deploy / Operations
+- HTTPS request - multiple varians pro endpoint
+- Production varian for autoscaling
+- Modify without down time
+
+
+*Securiy of SageMaker Instances
+-  Secure Jupyter notebook - ec2-based - run as dedicated ec2 isntances - not shared - map 
+-  MAP SageMaker resources to VPC - apply Security Group
+- Use ENI and attach to the SageMakret Service Account.  
+- Control access - without internet access to the Notebooks
+- use only VPC endpoints to access jupyer notebooks instace
+- encry data at rest in in flight - end-to-end encrption
+- lifeccyle configuraiotn - install agents on ec2 level - and OS hardening
+- CloudTrail and and CloudWath for logging at API level and instance level
+
+- same approach to trainig, tunining, hoste endpoint - without access to internt
+only using ENI, security group, and VPC endpoints to S3, runtime, api, etc. 
+- network level control  - only use 

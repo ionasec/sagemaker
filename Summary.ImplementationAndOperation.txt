@@ -1,0 +1,37 @@
+Perforamnce Optimizatitoino  
+- EC2 Contianer Registry - training and intferece code
+- S3 Buckets for your - model / data
+- endpoints - https
+
+
+
+
+
+**Deployment
+Scalable
+
+**Inference
+Batch
+Real-time
+Multipe MOdel
+
+**Metrics
+Logging
+Vaidaiton
+Evlautoi Falure
+
+Model Performnace
+Data Drift
+
+Visualize 
+Alert Degradation 
+
+
+Model Monitor 
+- baseline
+- suggest basedline contriants
+- craete baseline kjobs
+- create cointnuous schedule
+- start monitoring
+
+Analyze / Retrain 

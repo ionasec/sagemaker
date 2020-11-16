@@ -1,0 +1,39 @@
+Implementing and Operating the Model
+
+- SageMarker Toolkit - 
+
+Studio : IDE for ML
+Build : notebooks and market place
+Traing and Tune:  Autopilot , Auto Model Tuning, Debugger, Experimensts
+Deploy and Manage: Model Monitor -drift, Neo train one deploy, Augmented AI - human review
+Label: GT to buikld and manage datasets
+
+
+Studion - Visual Interface 
+- build, train, deploy
+- upload data, create notebooks, train, tune, adjust experiemnts, compare results, deploy models in production
+
+
+AutoPilot  - Performance
+- build traing and tune - inspect data, apply feature, engineer, train and tune multiple mode, rank moels, based onn perforamnce
+- gives you the best model for your problem at hand
+- use by dev without ml experience
+
+
+Experiements - Evaluation
+- organize model artifact, track mestric on models, and evalute training runs
+- manage model iteration, using input parram, config, and results and save the as experiemnes
+
+Debbugest - Fault Tolerance
+- analyze, deintif, alterf for ML
+- track real-time metric, consufions metric,s and learning gradient 
+- generate warning and corrective action advice
+
+
+Montior - Resliance
+- concept drift detection
+- detailed notification of the source for the drift
+
+
+--
+

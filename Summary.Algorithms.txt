@@ -1,0 +1,23 @@
+Create Data
+- produce
+-
+
+Produce Model
+- train , test
+- evalute
+
+Execute Model
+
+
+Algos use exemplate data to create a generalize that use algos to produce a model to solve the business poroblem.
+Inference to predict on a new model. Undersand business prolbem
+ Discrete - linear learning binary class ,  xgboost logistic reg
+ Continuous - linear learning regress, xgboos - reg: linear
+ 
+ factorization machine - sparse data - recommendation
+ 
+ 
+Topics - LDA, NTM
+Classificaiton - Blazing Text
+Anomly - Random Cut Forest
+
