@@ -1,0 +1,46 @@
+2020.11.22-wizzlab practice examem  - 33!
+
+CSV schmela building  attributes
+
+
+Data Engineering:
+-Python library suites for data engineering / raw feature vector into SageMaker formats
+-Real-time IoT data with Real-time analysis - Kinesis API PulRecords * is there a Kinesis Producere Library or Client Library? 
+-Real-time video stream - find questionabl eactivity - use sagemaker to train - accurate and cost effective - KVS + Fargate + SageMaker
+-Convert from Json to Hive data with Glue - most efficient data for Hive - ORC - Ojbect Row Column .. ?
+-Get real-time data and perform ETL and put in SE - simplest, most cost effective, performant, and scalable, 
+-Time series price prediction - KDM - API call - valid parameters for Put_record ... ***
+
+Data Analysis:
+-Glue to build data schema for K-mean - use cralwer * can glue to clasffication and data flattening?
+-Decompose Timestamp into year, months, days
+-Missing categorical data with max accuracy without bias - impute with deep learning
+-Imbalanced dataset / Skewed data towads one class - SMOTE - synthetic min oversampling - 
+-Streaming data cleaning, transform, organize into data lake for use in SM - simplest solution - KDS + Lambda for ETL. 
+-Clean data with SCIKIT LEARN library transfomrer - 1) Labelbinarizer, 2)OrdinalEncoder, 3) OneHotEncoder, 4) SimpleImputer *Checkout the transformers
+-Quantile binning transformation * check out again the defintion and alternative histrogram techniques
+-Distribution visualization with histrograms 
+
+
+
+Modeling / Algorithms:
+-Binary classification Linear learner Algo - hyperparamter to build a binary classification model. prediction_type = binary_classifier
+-Near Real-time anomly detection with - Kinesis Data Analytics Random cut Forest *Check this with temperature manipulaiton 
+-Regression decision trees for house pricing prediction - overfit - user multiple trees and average... 
+-Regressionfor multiplle productlines - predict sales / rates - and select the highest 
+- Skewed data towards negative - True Positive performance - what metric to use - 
+-input types in sagemaker - text / csv- label-size = 0 for unsuprivesd
+-input types - target value no header - 
+-xgboost algo for classification - hyperparamter tuning - objective set to mult:softprob *checkout hyperparamter of xgboost!
+-binary classification - max concuarey hyperparamter tunning -  baysenian Search / Random Search.
+
+
+Implementation / Operation:
+- Facial detection for people recongition with Rekognition - * Learn about parameters and requirements...
+- Social media sentiment classification with Comprehend * Learn about sentiment Analysis
+- Data protection / confidentiality - large data lakes with multiple external sources and users on S3 - assess to roles and premssion- groups
+- Recommend product based on demographic stored on S3 - Glue Crawler - Classifier - no Schema 
+- Labeling of data with SM GT for auto and GT for human labelers.
+- No data arriving thoruhg Kinesis Firehose when Data Transform on - lambda timeout ~ 5min in KFH
+- Encryption in flight and at rest with KDF and S3 - Use server-side encrpytion with KMS. 
+- KDF + Redshift - S3 in own account ot use BI and Quicksight. No data to Redshift - 
