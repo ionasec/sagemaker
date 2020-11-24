@@ -1,0 +1,22 @@
+Completed Whizlabs Online Course - https://www.whizlabs.com/learn/course/aws-mls-practice-tests#section-3
+
+Completed Parcatice Test 1 - on Whizlabs - https://www.whizlabs.com/learn/course/aws-mls-practice-tests#section-3
+
+
+Content Types Supported by Built-In Algorithms
+https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-training.html
+Using CSV Format
+-  Amazon SageMaker requires that a CSV file does not have a header record and that the target variable is in the first column
+-  To run unsupervised learning algorithms that don't have a target, specify the number of label columns in the content type. For example, in this case 'content_type=text/csv;label_size=0'.
+
+Using RecordIO Format
+- optimized protobuf recordIO data format for training. Using this format allows you to take advantage of Pipe mode.  Pipe mode is faster. Pipe mode needs only enough disk space to store your final model artifacts. 
+- https://mxnet.apache.org/versions/1.7.0/api/architecture/note_data_loading.html#data-format
+- https://github.com/aws/amazon-sagemaker-examples/blob/master/introduction_to_amazon_algorithms/factorization_machines_mnist/factorization_machines_mnist.ipynb
+
+Common Data Formats for Inference
+https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-inference.html
+
+Amazon SageMaker algorithm inference requests include: text/csv, application/json, and application/x-recordio-protobuf, text/libsvm (for XGBOOST)
+
+For payload "instances":  and "predictions" for responses
