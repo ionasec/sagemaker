@@ -1,0 +1,65 @@
+Reinforcement Learning
+
+- ML technique learna a strategy (called policy), that optimizes an objective for an agent acting in an environmnet 
+
+- Agent performs an action in Env
+- Agent check the state
+- Agent receive a reward
+
+=> maximize long-term reward as a result of action
+- trial and error strategy
+
+
+Model makes indepedent decisions - based on markov decision processes  (MDP)
+- works throgh a time steps
+Env: RL operating space
+State: describes the env and relevant past steps
+Action: activity
+Reward: reflect the state give the last action
+Observation: data about the state at each step
+
+
+Robotics 
+Traffic light control - trial an error - based on weather / time of the day
+Predict autoscaling - learn best autoscaling 
+Tuning parames of web system -...
+Optimizing chemical reaction
+Personalized recommendation - learn best presonalization to make
+Gaming - go champion - deep mind - highest level go playe
+Deep learning - "see an environemnt" - and learn how to interact- deep racer
+
+RL - build using TF or Apache MXNet
+Rl - toolkit to manange interation with the env - IntelCoach and Ray RLib toolkits
+RL - Environment - customer - or open source - Energy Plus and Ray RLib / buy commercial MathLAb and Simuling
+
+hyper
+- learning rate - too fast no converage
+- discount - factor - short term or long term rewards (same a business)
+- entropy - degree of uncertainty - exploit what's known vs explore what unknown
+
+
+
+Forecasting Algorithms
+- Deep AR algorithm for Forecasting
+*supervised 1-dim timeseries using RNN (recurent neural networks)
+
+trains a single model on time series - Deep AR trains on single mode across all datasets
+stationariy vs non -stationary time series - deviation over time
+
+*uses approx to predict how the algo will evolve
+
+Deep AR algo on SageMaker
+- Train and Test dataset
+use a trained model to predict future of time series 
+
+Time sersies based on the frequency - day or week, month, and year
+What if scenarious ?
+Builds on model and tries to find similarties acorss time series
+
+usecase - global food demand, predict fast food quest, predict temperature, rainfall, stock prices / options, disease progession, supply chain mgmg
+
+hyparam
+- context lenght - what is the length for deciino
+- epochs - max number of pasess over the training data
+- pred length - forecast horizon
+- time freq - granularity in the time series dataset

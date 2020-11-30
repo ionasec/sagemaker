@@ -1,0 +1,39 @@
+Select Services
+
+Lex - converstation interface using voice and text
+- DL lagos for ASR to convert speech to text
+- DL NLU - to recognize the inten
+- Alexa uses the same Lex 
+- fully managed that scales automatically
+
+Rekognition - video and image analysis
+- DL for object detection - people, text, scences, activites, innaporopiate content
+- facial recognition for facial search for verification
+usecase: people countring, celebratiy ident, public safety
+- custom label features - automaticall  identifes lables.
+
+Transcribe
+- Add speach to text to your app. Connect -s3- lambda - transcribe - comprehend 
+- DL - ASR - automatic speech recongintion
+- can be used in batck or near real-time
+- automatically redact content - PII - can be redact automatically for you ?
+
+TRanslate
+- Add language tarnsclation - use CS scenario
+- DL to produce accurate natural sounding translation (neural machine translation)
+- localize content - make content localize...  on-demand translation. continually learning from expanding datasets
+
+Polly
+- adds TTS - text to speech 
+- snthesis human speech that sounds natural
+- with many voices - NTTS (neural text-to-speach) - newscaster and converation styles
+- create your brand voice - customize NTTS - with professional services
+
+Comprehend
+- Understand what language is being spoken
+- NLP services that finds insights and relationships in text
+- identifies langues, extract key phrases, places, pepole, event
+- understands postive, negative of the text
+- tokenizese text and parts of speacl and organize by topic
+- extend to recognize your own organize your vocabulary... 
+
