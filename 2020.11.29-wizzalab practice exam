@@ -1,0 +1,43 @@
+Second part of partice test 1 - starting with question 34
+
+
+Data Engineering
+- Hadoop data lake to make prediction - Hive, Spark, Sqoop, Flume installed. Hadoop to SageMaker data loading ? *  DataPipeline? SageMaker Spark Lirary*
+https://docs.aws.amazon.com/sagemaker/latest/dg/apache-spark.html
+
+- Data Split for timeseries - sequential split ??
+- Default SimpleImputer - scikit-learn - default value is MEAN
+- preprocessing Container for trianing and inference with ski-learn sagemaker integration
+https://aws.amazon.com/blogs/machine-learning/preprocess-input-data-before-making-predictions-using-amazon-sagemaker-inference-pipelines-and-scikit-learn/
+
+- OnHotEncoder - 
+https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html - drop category in features
+https://aws.amazon.com/blogs/machine-learning/preprocess-input-data-before-making-predictions-using-amazon-sagemaker-inference-pipelines-and-scikit-learn/
+
+
+Analysis
+- word frequency in a document.  * Term frequency Inverse document frequency / Orthognoal Spare Bigram ?
+- find common words or phrases in feeds .. 
+- Correct for banks and outliers - 
+- outlier indetification quickly - scatter plots and box plots
+- * LARS, LOF, OLSR ?
+- OnHotEncoder transformer - drop method. 
+
+Modeling
+- future price prediction - timeseries - evalution strategy - cross validation method - time series corss validation
+- real time anamaly detection - CSV - classification - linear learner - multiclass-classifier preditor
+- robotic automation - simulaiton-based reinforcement learning
+- classification of car makes using camera - multiclass
+- classification of dog breed from insta - 
+- voice recongiition  - sequence to sequence
+- classification of state and OCR of the nubmer - out of domain samples - reduce outlier impact  - slow learning rate
+- near real-time prediction of actions for forecasting ARIMA and ETS - you have many timeseries... DeepAR 
+- k-means scorping parameters.. 
+
+Implementation and Operation
+- source dynamoDB csv format in s3 with auto updates. also ad hoc queries. * DataPipeline...
+- log data for prediction - unstructured data on s3 - get into csv - to another s3 - 
+- CSV as trainig for binary classification with XGBoost - 
+- Custom ML model with HTTPS endpoint. Container questions -  Result to client - 8080 web server, invoke endpot headers, accept POST from invocation endpoint
+- near real-time prediction - evalution production performance in jupyter noteboo - 
+- train with large dataset and takes too long - imporve trainig performance - 
